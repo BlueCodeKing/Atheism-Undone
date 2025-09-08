@@ -1,0 +1,42 @@
+footer {
+    background-color: black;
+    border-top: solid white 4px;
+}
+
+footer blockquote {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin: 28px;
+}
+
+footer p.copyright {
+    color: white;
+    margin: 20px;
+    text-align: center;
+    position: relative;
+}
+
+@media (max-width: 426px) {
+
+    footer blockquote {
+        font-size: 26px;
+    }
+
+}
+
+@media (max-width: 376px) {
+
+    footer blockquote {
+        font-size: 22px;
+    }
+
+}
+
+@media (max-width: 321px) {
+    
+    footer blockquote {
+        font-size: 19px;
+    }
+
+}

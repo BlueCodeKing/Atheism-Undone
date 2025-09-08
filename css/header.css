@@ -1,0 +1,128 @@
+header {
+    height: 100px;
+    background-image: linear-gradient(dodgerblue, blue);
+    border-bottom: solid #0af 4px;
+    overflow-y: hidden;
+}
+
+header h1 {
+    display: inline;
+}
+
+header h1 a {
+    color: white;
+    line-height: 100px;
+    font-size: 50px;
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+header ul {
+    float: right;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    display: inline;
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 5px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    line-height: 100px;
+    transition: .5s;
+}
+
+header ul li a:last-child {
+    margin-right: 20px;
+}
+
+header ul li a:hover, header ul li a.active {
+    background-color: black;
+}
+
+header input {
+    display: none;
+}
+
+header label div#menuButton {
+    width: 30px;
+    cursor: pointer;
+    float: right;
+    margin: 37px 30px;
+    display: none;
+}
+
+header label div#menuButton div {
+    background-color: white;
+    height: 6px;
+    width: 100%;
+    border-radius: 2px;
+}
+
+header label div#menuButton div:nth-child(2) {
+    margin: 5px 0;
+}
+
+@media (max-width: 1439px) {
+
+    header label div#menuButton {
+        display: inline-block;
+    }
+
+    header ul {
+        position: absolute;
+        width: 100%;
+        background-color: black;
+        opacity: .9;
+        top: 104px;
+        height: 99vh;
+        left: -100%;
+        transition: .7s;
+    }
+
+    header input#inputBox:checked ~ ul {
+        left: 0;
+    }
+
+    header ul li {
+        display: block;
+        text-align: center;
+    }
+
+    header ul li:first-child {
+        margin-top: 30px;
+    }
+
+    header ul li a {
+        margin-right: 0;
+    }
+
+    header ul li a:last-child {
+        margin-right: 0;
+    }
+
+}
+
+@media (max-width: 639px) {
+
+    span#span1 {
+        position: absolute;
+        top: -20px;
+        font-size: 38px;
+        left: 14px;
+    }
+
+    span#span2 {
+        position: absolute;
+        top: 20px;
+        font-size: 38px;
+        left: 14px;
+    }
+
+}
